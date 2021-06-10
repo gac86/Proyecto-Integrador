@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: hsl(222, 21%, 91%);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-yellow {
+    color: #F2B831;
+}
+
+.container {
+    width: 90vw;
+    max-width: 180vh;
+    margin: auto;
+}
+
+/* header */
+
+.nav-bar {
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    background-color: #023F86;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.nav-bar a {
+    color: #F2B831;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.nav-logo a {
+    letter-spacing: 8px;
+    font-size: 1.2em;
+}
+
+.main-header {
+    padding: 2rem;
+    background-color: #7E7F80;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 1.5rem;
+}
+
+.main-header h1, .main-header p {
+    letter-spacing: 8px;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.main-header img {
+    width: 10rem;
+}
+
+/* main */
+
+main {
+    background-color: #023F86;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hardware {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    justify-content: space-around;
+    width: 98%;
+    background-color: #F2B831;
+}
+
+.section-logo {
+    justify-content: center;
+    margin-top: 1.2rem;
+    font-size: 2em;
+    color: #023F86;
+}
+
+.hardware-card1 {
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.6rem;
+    padding: 1.9rem;
+    width: clamp(300px,30%,600px);
+    background-color: #7E7F80;
+    
+}
+
+.hardware-card1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hardware-card1 p {
+    margin-top: 1.2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #F2B831;
+    justify-content: space-around;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+}
+
+.about {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 0.75em;
+}
+
+.icons {
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+@media screen and (max-width:870px) {
+
+    .nav-bar {
+       flex-direction: column;
+       padding: 0;
+       margin: 0;
+
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .icons {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+}
+
